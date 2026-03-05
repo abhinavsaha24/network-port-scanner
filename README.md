@@ -1,65 +1,62 @@
-\# Network Port Scanner
+# Network Port Scanner
 
+A **multithreaded Python port scanner** that detects open ports and identifies common network services on a target host.
+This tool demonstrates core **network security concepts**, including socket programming, concurrent scanning, and service identification.
 
+---
 
-A multithreaded Python port scanner that detects open ports and identifies common network services.
+## Features
 
+* ⚡ Fast **multithreaded port scanning**
+* 🔍 Detects **open TCP ports**
+* 🌐 Identifies common services (HTTP, SSH, DNS, etc.)
+* 📡 Scans ports **1–1024**
+* 🛠 Simple and lightweight security tool
 
+---
 
-\## Features
+## Technologies Used
 
+* **Python**
+* **Socket Programming**
+* **Multithreading**
 
+---
 
-\- Fast multithreaded scanning
+## Usage
 
-\- Detects open ports
+1. Run the scanner:
 
-\- Identifies common services (HTTP, SSH, DNS, etc.)
+```
+python port_scanner.py
+```
 
-\- Scans ports 1–1024
+2. Enter the target IP address or domain name:
 
-
-
-\## Technologies Used
-
-
-
-\- Python
-
-\- Socket programming
-
-\- Multithreading
-
-
-
-\## Usage
-
-
-
-Run the scanner:
-
-
-
-python port\_scanner.py
-
-
-
-Enter target IP or domain:
-
-
-
+```
 scanme.nmap.org
+```
 
+---
 
+## Example Output
 
-\## Example Output
+```
+Enter target IP: scanme.nmap.org
 
+Scanning target scanme.nmap.org...
 
-
-Port 22 OPEN | Service: SSH  
-
-Port 53 OPEN | Service: DNS  
-
-Port 80 OPEN | Service: HTTP  
-
+Port 22 OPEN | Service: SSH
+Port 53 OPEN | Service: DNS
+Port 80 OPEN | Service: HTTP
 Port 443 OPEN | Service: HTTPS
+
+Scan completed.
+```
+
+---
+
+## Disclaimer
+
+This tool is created **for educational and ethical security testing purposes only**.
+Do **not scan networks or systems without proper authorization*
