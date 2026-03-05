@@ -63,4 +63,3 @@ Port 53 OPEN | Service: DNS
 Port 80 OPEN | Service: HTTP  
 
 Port 443 OPEN | Service: HTTPS
-
